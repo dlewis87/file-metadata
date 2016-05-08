@@ -6,19 +6,24 @@
 		<title>File Metadata</title>
 		
 		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	</head>
 
 	<body>
-		<p>
-			This is a very simple test harness which posts to 
-			<a href="https://cryptic-ridge-9197.herokuapp.com//api/fileanalyse">
-				https://cryptic-ridge-9197.herokuapp.com//api/fileanalyse</a>
-			Take a look at <i>View page source</i> to see how it works.
-		</p>
-		<form id="file-form" enctype="multipart/form-data" method="post">
-			<input type="file" name="the-file" />
-			<input type="submit" value="Upload" />
-		</form>
+		
+		<h1 class="text-center">File Metadata Microservoce</h1>
+		<div class="container">
+			<form id="file-form" enctype="multipart/form-data" method="post">
+				<div class="form-group">
+					<input type="file" name="the-file" />
+				</div>	
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+		
 	
 
 	</body>
